@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/68305096/233254587-a15fc4f4-f90a-45ab-ac0e-a8063ec0fdd9.png" style="width: 50%;">
+  <img src="https://user-images.githubusercontent.com/68305096/233254587-a15fc4f4-f90a-45ab-ac0e-a8063ec0fdd9.png" style="width: 75%;">
 </div>
 
 <h1 align="center"> Oracle ONE: CryptoCypher :lock_with_ink_pen:	 </h1>
