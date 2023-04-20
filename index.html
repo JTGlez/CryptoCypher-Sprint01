@@ -22,7 +22,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Introducing Lollipop, a sweet new take on Android.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Android</title>
+    <title>CryptoCypher</title>
+    <link rel="shortcut icon" href="images/buu.png".png">
+
 
     <!-- Page styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
@@ -44,110 +46,111 @@
 
   </head>
   <body>
+        <!--Header de la plantilla-->
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
 
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+          <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
+            <div class="mdl-layout__header-row">
+              <span class="android-title mdl-layout-title">
+                <img class="android-logo-image" src="images/alura-logo.png">
+              </span>
 
-      <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
-        <div class="mdl-layout__header-row">
-          <span class="android-title mdl-layout-title">
-            <img class="android-logo-image" src="images/alura-logo.png">
-          </span>
-
-          <!-- Add spacer, to align navigation to the right in desktop -->
-          <div class="android-header-spacer mdl-layout-spacer"></div>
-          <!-- Navigation -->
-          <div class="android-navigation-container">
-            <nav class="android-navigation mdl-navigation">
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Sustitución simple</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">AES-GCM</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">ChaCha20</a>
-            </nav>
-          </div>
-         
-        </div>
-      </div>
-
-
-      <div class="android-content mdl-layout__content">
-        <a name="top"></a>
-
-        <div class="android-more-section">
-          <div class="android-section-title mdl-typography--display-1-color-contrast">CryptoCypher</div>
-
-          <div class="android-card-container mdl-grid">
-
-            <div class="mdl-cell mdl-cell--3-col mdl-cell--3-col-tablet mdl-cell--3-col-phone mdl-card mdl-shadow--3dp">
-              <div class="mdl-card__media">
-                <img src="images/sustsimple.gif" height="100px">
+              <!-- Add spacer, to align navigation to the right in desktop -->
+              <div class="android-header-spacer mdl-layout-spacer"></div>
+              <!-- Navigation -->
+              <div class="android-navigation-container">
+                <nav class="android-navigation mdl-navigation">
+                  <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Sustitución simple</a>
+                  <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">AES-GCM</a>
+                  <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">ChaCha20</a>
+                </nav>
               </div>
-              <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">Sustitución simple</h4>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">¿Podrás encontrar la regla de cifrado? </span>
-              </div>
-              <div class="mdl-card__actions">
-                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                   ¡Intentémoslo!
-                   <i class="material-icons">chevron_right</i>
-                 </a>
-              </div>
-            </div>
-
-            <div class="mdl-cell mdl-cell--3-col mdl-cell--3-col-tablet mdl-cell--3-col-phone mdl-card mdl-shadow--3dp">
-              <div class="mdl-card__media">
-                <img src="images/aes.png" height="100px">
-              </div>
-              <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">AES-GCM</h4>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">Cifrado simétrico por bloques bajo el modo de operación Galois Counter Mode. ¿Complicado, no?</span>
-              </div>
-              <div class="mdl-card__actions">
-                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                  ¡Intentémoslo!
-                   <i class="material-icons">chevron_right</i>
-                 </a>
-              </div>
-            </div>
-
-            <div class="mdl-cell mdl-cell--3-col mdl-cell--3-col-tablet mdl-cell--3-col-phone mdl-card mdl-shadow--3dp">
-              <div class="mdl-card__media">
-                <img src="images/chacha.gif" height="100px">
-              </div>
-              <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">ChaCha20</h4>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">Cifrado simétrico por flujo desarrollado por Google. ¡Muy eficaz!</span>
-              </div>
-              <div class="mdl-card__actions">
-                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                  ¡Intentémoslo!
-                   <i class="material-icons">chevron_right</i>
-                 </a>
-              </div>
-            </div>
-
-            <div class="mdl-cell mdl-cell--3-col mdl-cell--3-col-tablet mdl-cell--3-col-phone mdl-card mdl-shadow--3dp">
-              <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">¡Prueba un algoritmo!</h4>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">Elige entre los métodos de cifrado disponibles. </span>
-              </div>
-              <div class="mdl-card__media">
-                <img src="images/encryption.gif">
-              </div>
-            </div>
-
             
-
-            
+            </div>
           </div>
-        </div>
+    
+        <!--Cuerpo principal de la página-->
+        <main class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+          <div class="android-content mdl-layout__content">
+            <a name="top"></a>
 
+            <div class="android-more-section">
+              <div class="android-section-title mdl-typography--display-1-color-contrast">CryptoCypher</div>
+
+              <div class="android-card-container mdl-grid">
+
+                <div class="mdl-cell mdl-cell--3-col mdl-cell--3-col-tablet mdl-cell--3-col-phone mdl-card mdl-shadow--3dp">
+                  <div class="mdl-card__media">
+                    <img src="images/sustsimple.gif" height="100px">
+                  </div>
+                  <div class="mdl-card__title">
+                    <h4 class="mdl-card__title-text">Sustitución simple</h4>
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <span class="mdl-typography--font-light mdl-typography--subhead">¿Podrás encontrar la regla de cifrado? </span>
+                  </div>
+                  <div class="mdl-card__actions">
+                    <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="simplecrypto.html">
+                      ¡Intentémoslo!
+                      <i class="material-icons">chevron_right</i>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="mdl-cell mdl-cell--3-col mdl-cell--3-col-tablet mdl-cell--3-col-phone mdl-card mdl-shadow--3dp">
+                  <div class="mdl-card__media">
+                    <img src="images/aes.png" height="100px">
+                  </div>
+                  <div class="mdl-card__title">
+                    <h4 class="mdl-card__title-text">AES-GCM</h4>
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <span class="mdl-typography--font-light mdl-typography--subhead">Cifrado simétrico por bloques bajo el modo de operación Galois Counter Mode. ¿Complicado, no?</span>
+                  </div>
+                  <div class="mdl-card__actions">
+                    <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="aes.html">
+                      ¡Intentémoslo!
+                      <i class="material-icons">chevron_right</i>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="mdl-cell mdl-cell--3-col mdl-cell--3-col-tablet mdl-cell--3-col-phone mdl-card mdl-shadow--3dp">
+                  <div class="mdl-card__media">
+                    <img src="images/chacha.gif" height="100px">
+                  </div>
+                  <div class="mdl-card__title">
+                    <h4 class="mdl-card__title-text">ChaCha20</h4>
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <span class="mdl-typography--font-light mdl-typography--subhead">Cifrado simétrico por flujo desarrollado por Google. ¡Muy eficaz!</span>
+                  </div>
+                  <div class="mdl-card__actions">
+                    <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="chacha20.html">
+                      ¡Intentémoslo!
+                      <i class="material-icons">chevron_right</i>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="mdl-cell mdl-cell--3-col mdl-cell--3-col-tablet mdl-cell--3-col-phone mdl-card mdl-shadow--3dp">
+                  <div class="mdl-card__title">
+                    <h4 class="mdl-card__title-text">¡Prueba un algoritmo!</h4>
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <span class="mdl-typography--font-light mdl-typography--subhead">Elige entre los métodos de cifrado disponibles. </span>
+                  </div>
+                  <div class="mdl-card__media">
+                    <img src="images/encryption.gif">
+                  </div>
+                </div>
+
+              
+              </div>
+            </div>
+        </main>
+      
+        <!--Footer de la página-->
         <footer class="android-footer mdl-mega-footer">
 
           <div class="mdl-mega-footer--top-section">
@@ -157,7 +160,7 @@
           </div>
 
           <div class="mdl-mega-footer--middle-section">
-            <p class="mdl-typography--font-light">CryptoCypher: JTGlez - 2023</p>
+            <p class="mdl-typography--font-bold">CryptoCypher</p>
             <p class="mdl-typography--font-light">Proyecto 1: Oracle ONE</p>
           </div>
 
@@ -167,13 +170,12 @@
 
           <div class="mdl-mega-footer--bottom-section">
             
-            <a class="android-link mdl-typography--font-light" href="">Linkedin</a>
-            <a class="android-link mdl-typography--font-light" href="">Github</a>
+            <a class="android-link mdl-typography--font-light" href="https://www.linkedin.com/in/jtglez/">Linkedin</a>
+            <a class="android-link mdl-typography--font-light" href="https://github.com/JTGlez">Github</a>
           </div>
 
         </footer>
       </div>
-
 
     </div>
 
