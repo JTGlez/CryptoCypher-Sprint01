@@ -1,0 +1,92 @@
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>CryptoCypher</title>
+    <link rel="shortcut icon" href="images/buu.png".png">
+
+    <!-- Page styles -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.min.css">
+    <link rel="stylesheet" href="css/mdlstyles.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+  </head>
+  <body>
+
+      <!--Barra de navegación de la página-->
+      <header>
+        <div class = "header">
+            <h1>
+                <a href="index.html">
+                    <img class="logo-alura" src="images/alura-logo.png" alt="Alura Logo">
+                  </a>
+            </h1>
+
+            <div class = "respmenu">
+                <nav>
+                    <input type="checkbox" id="menu">
+                    <label for="menu" id="labelmenu"> ☰ </label>
+                    <ul class = "navegacion">
+                        <li><a href = "index.html">Inicio</a></li>
+                        <li><a href = "simplencrypt.html">Sustitución Simple</a></li>
+                        <li><a href = "aes.html">AES-GCM</a></li>
+                        <li><a href = "chacha20.html">ChaCha20</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+        </div>
+    </header>
+
+
+    <!--Cuerpo principal de la página-->
+    <main class="encrypt-decrypt">
+        <section class = "text-field">
+            <h1 class = "titulo-principal">Ingrese el texto aquí</h1>
+            <form class="input">
+                <textarea cols="700" rows="10" class="input-texto"></textarea>
+
+                <div class="botones">
+                    <input type="submit" value = "Cifrar" class = "cifrar">
+                    <input type="submit" value = "Descifrar" class = "descifrar">
+                </div>
+
+            </form>
+
+        <section class="output-text">
+
+            <div class="salida">
+                <p class="mensaje-null">Ningún mensaje fue encontrado</p>
+                <p class = "ingresar">Ingresa el texto que desees cifrar o descifrar</p>
+            </div>
+
+
+
+        </section>
+
+
+    </main>
+      
+    <!--Footer de la página-->
+    <footer>
+      <a class="link-ref" href="https://github.com/JTGlez">
+        Made by JTGlez - 2023 ©</a>
+        <p></p>
+      <p class = "copyright">Los créditos de las fotografías pertenecen a sus respectivos autores. ©</p>
+    </footer>
+
+  </body>
+</html>
