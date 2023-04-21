@@ -13,13 +13,13 @@
 
 .navegacion{
     position: absolute;
-    top: 18px;
+    top: 35px;
     right: 50px;
 }
 
 .navegacion li{
     display: inline;
-    margin: 0 0 0 1.5em; /*Coordenadas de espaciamiento*/
+    margin: 0 0 0 4em; /*Coordenadas de espaciamiento*/
 
 }
 
@@ -43,6 +43,10 @@ input, label{
 }
 
 /*-----------------------------Estilos para el contenido-----------------------------*/
+
+mdl-layout mdl-js-layout mdl-layout--fixed-headerr {
+    margin-bottom: 60px; /* ajusta el valor según la altura de tu footer */
+  }
 
 .titulo-principal{
     font-size: 30px;
@@ -98,12 +102,38 @@ input, label{
 
 /*-------------------------------Estilos para el footer------------------------------*/
 
+footer{
+    margin: 4em 0 0 0;
+    position:relative;
+    width: 100%;
+    background: linear-gradient(#FEFEFE, #b7b5b5);
+    color: #717070;
+    text-align: center;
+    padding: 1em 0 2em 0;
+}
+
+footer a{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: lightblue;
+    transition: 400ms;
+}
+
+footer p{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+footer a:hover{
+    font-size: 18px;
+}
+
 /*Media query: Para pantallas de hasta 732px despliegue formato móvil.*/
-@media screen and (max-width:732px){
+@media screen and (max-width:720px){
 
     /*Ancho de 60% y padding de 10% para acomodar al lado del hamburger menu*/
     .logo-alura{
-        width: 50%;
+        width: 60%;
         padding: 0 0 0 10%;
     }
 
@@ -132,7 +162,7 @@ input, label{
     input:checked  ~ ul{
         box-sizing: border-box;
         display: block;
-        margin-left: 3em;
+        margin-left:6em;
     }
 
     /*No se muestra el input con el que se construye el hamburger button*/
@@ -152,9 +182,64 @@ input, label{
         font-weight: bold;
         text-align: center;
         position: absolute;
-        top: 2em;
+        top: 2.5em;
         right:2em;
         
     }
+
+}
+
+
+@media screen and (max-width:920px){
+
+     /*Posición relativa al logo de Alura para no quedar en Overflow*/
+     .navegacion{
+        position: relative;
+        text-align: center;
+    }
+
+    .navegacion li{
+        display: block;
+        box-sizing: border-box;
+        background: lightgrey;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid grey;
+    }
+
+    /*No se muestra la lista de navegación de escritorio*/
+    ul{
+        display: none;
+    }
+
+    /*Comportamiento de la lista al hacer check en el butón hamburger. Centro con 5.5em al margen*/  
+    input:checked  ~ ul{
+        box-sizing: border-box;
+        display: block;
+        margin-left:6em;
+    }
+
+    /*No se muestra el input con el que se construye el hamburger button*/
+    input {
+        display: none;
+    }
+
+    /*Establecemos propiedades del hamburger button*/
+    label {
+        box-sizing: border-box;
+        display: block;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-weight: bold;
+        text-align: center;
+        position: absolute;
+        top: 2.5em;
+        right:2em;
+        
+    }
+
 
 }
