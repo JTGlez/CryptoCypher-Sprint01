@@ -53,30 +53,31 @@
 
 
     <!--Cuerpo principal de la página-->
-    <main class="encrypt-decrypt">
-        <section class = "text-field">
-            <h1 class = "titulo-principal">Ingrese el texto aquí</h1>
-            <form class="input">
-                <textarea cols="700" rows="10" class="input-texto"></textarea>
+    <main class="encrypt-decrypt">  
+      
+      <!--Separación estilo Grid-Layout-->
+      <div class = "grid-layout">
 
-                <div class="botones">
-                    <input type="submit" value = "Cifrar" class = "cifrar">
-                    <input type="submit" value = "Descifrar" class = "descifrar">
-                </div>
+        <div class="input-section">
+          <h1 class = "titulo-principal">Ingrese el texto aquí</h1>
 
-            </form>
-
-        <section class="output-text">
-
-            <div class="salida">
-                <p class="mensaje-null">Ningún mensaje fue encontrado</p>
-                <p class = "ingresar">Ingresa el texto que desees cifrar o descifrar</p>
+          <form class="input">
+            <textarea cols="70" rows="10" class="input-texto"></textarea>
+            <div class="botones">
+                <input type="submit" value = "Cifrar" class = "cifrar">
+                <input type="submit" value = "Descifrar" class = "descifrar">
             </div>
+          </form>
+      </div>
 
 
+        <div class = "output-section">
+          <img class = "find" src = "images/find.PNG">
+          <p class = "no-message">Ningún mensaje fue encontrado</p>
+          <p class="no-message-input">Ingresa el texto que desees cifrar o descifrar.</p>
+        </div>
 
-        </section>
-
+      </div>
 
     </main>
       
