@@ -13,11 +13,11 @@ distintas:
 | ------ | ------ |
 | Reemplazo de letras |  --- |
 | AES-GCM | 256 bits |
-| ChaCha20 | 256 bits |
+| 3DES | 192 bits |
 
 ## 🚀 Funcionamiento
 
-El proyecto se encuentra disponible en el siguiente enlace: (EN PROCESO)
+El proyecto se encuentra disponible en el siguiente enlace: https://jtglez.github.io/CryptoCypher-Sprint01/index.html
 
 ## Autor
 - [Jorge González](https://github.com/JTGlez)
