@@ -21,3 +21,7 @@ El proyecto se encuentra disponible en el siguiente enlace: https://jtglez.githu
 
 ## Autor
 - [Jorge González](https://github.com/JTGlez)
+
+## Referencias
+- [MDL Material Design](https://getmdl.io/templates/)
+- [CryptoJS](https://github.com/brix/crypto-js)
