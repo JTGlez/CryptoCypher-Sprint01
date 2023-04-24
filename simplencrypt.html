@@ -61,8 +61,8 @@
         <div class="input-section">
           <h1 class = "titulo-principal">Ingrese el texto aquí</h1>
 
-          <form class="input">
-            <textarea cols="70" rows="10" class="input-texto"></textarea>
+          <form>
+            <textarea name = "texto" cols="70" rows="10" class="input-texto"></textarea>
             <div class="botones">
                 <input type="submit" value = "Cifrar" class = "cifrar">
                 <input type="submit" value = "Descifrar" class = "descifrar">
@@ -71,7 +71,7 @@
       </div>
 
 
-        <div class = "output-section">
+        <div class = "output-section" id = "output-section">
           <img class = "find" src = "images/find.PNG">
           <p class = "no-message">Ningún mensaje fue encontrado</p>
           <p class="no-message-input">Ingresa el texto que desees cifrar o descifrar.</p>
@@ -90,4 +90,6 @@
     </footer>
 
   </body>
+
+  <script src="js/cryptdecrypt.js"></script>
 </html>
