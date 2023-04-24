@@ -35,7 +35,7 @@ let cifrado = '';
 let descifrado = '';
 
  // Clave y vector de inicialización
- var key = CryptoJS.enc.Hex.parse('0123456789abcdef012a8sn2'); //160 bits K1 = K2 = K3
+ var key = CryptoJS.enc.Hex.parse('0123456789abcdef012a8sn23'); //160 bits K1 = K2 = K3
  var iv = CryptoJS.enc.Hex.parse('0123456789abcdef');
 
 function cryptdecrypt(modo, mensaje) {
