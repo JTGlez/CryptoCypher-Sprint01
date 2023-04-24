@@ -74,7 +74,7 @@ mdl-layout mdl-js-layout mdl-layout--fixed-headerr {
   .input-texto{
     resize: none;
     margin: 1% 0 0 4%;
-    width: 80%; 
+    width: 42em;
     height: 30em;
     font-size: 20px;
     border-radius: 5px;
@@ -123,10 +123,16 @@ mdl-layout mdl-js-layout mdl-layout--fixed-headerr {
     margin: 1% 0 0 4%;
   }
 
+  @media screen and (min-width:1261px){
+
   .output-section{
+    position: absolute;
+    top: 8em;
+    right: 8em;
+    bottom: 1em;
     padding: 6.3em;
-    height: 70%;
-    width: 30%;
+    height: 60%;
+    width: 15%;
     border: 4px solid white;
     border-radius: 15px;
     background-color: rgb(226, 241, 245);
@@ -135,15 +141,18 @@ mdl-layout mdl-js-layout mdl-layout--fixed-headerr {
     line-height: 150px;
   }
 
+}
+
   .find{
     width: 100%;
     height: auto
   }
 
   .no-message{
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     color: #0A3871;
+    word-wrap: break-word;
   }
 
   .no-message-input{

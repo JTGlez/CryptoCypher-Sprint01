@@ -31,33 +31,23 @@ descifrarBtn.addEventListener('click', () => {
 
 /*Función de cifrado o descifrado*/
 
-const valoresDeReemplazo = {
-    'e': 'enter',
-    'i': 'imes',
-    'a': 'ai',
-    'o': 'ober',
-    'u': 'ufat'
-};
-
-// Invertir valoresDeReemplazo para poder descifrar
-const valoresDeDescifrado = {};
-
-for (let letra in valoresDeReemplazo) {
-    const sustitucion = valoresDeReemplazo[letra];
-    valoresDeDescifrado[sustitucion] = letra;
-}
-
 let cifrado = '';
 let descifrado = '';
 
+ // Clave y vector de inicialización
+ var key = CryptoJS.enc.Hex.parse('0123456789abcdef23456789abcdef0123456789abcdef');
+ var iv = CryptoJS.enc.Hex.parse('0123456789abcdef');
+
 function cryptdecrypt(modo, mensaje) {
     if (modo === "cifrar") {
-      cifrado = mensaje.replace(/[eiaou]/g, letra => valoresDeReemplazo[letra]);
-      console.log(cifrado);
-      return '<p class = "no-message">Texto cifrado: ' + cifrado + '</p>';
-  
+      cifrado = CryptoJS.TripleDES.encrypt(mensaje, key, { iv: iv });
+      console.log(cifrado.toString());
+      return '<p class = "no-message">Texto cifrado: ' + cifrado.toString() + '</p>';
+
     } else if (modo === "descifrar") {
-      descifrado = mensaje.replace(/enter|imes|ai|ober|ufat/g, cadena => valoresDeDescifrado[cadena]);
-      return '<p class = "no-message">Texto descifrado: ' + descifrado + '</p>';
-    }
+        descifrado = CryptoJS.TripleDES.decrypt(mensaje, key, { iv: iv });
+        console.log(descifrado.toString(CryptoJS.enc.Utf8));
+        return '<p class = "no-message">Texto descifrado: ' + descifrado.toString(CryptoJS.enc.Utf8) + '</p>';    
   }
+}
+  

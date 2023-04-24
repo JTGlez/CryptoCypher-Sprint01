@@ -30,34 +30,29 @@ descifrarBtn.addEventListener('click', () => {
 
 
 /*Función de cifrado o descifrado*/
-
-const valoresDeReemplazo = {
-    'e': 'enter',
-    'i': 'imes',
-    'a': 'ai',
-    'o': 'ober',
-    'u': 'ufat'
-};
-
-// Invertir valoresDeReemplazo para poder descifrar
-const valoresDeDescifrado = {};
-
-for (let letra in valoresDeReemplazo) {
-    const sustitucion = valoresDeReemplazo[letra];
-    valoresDeDescifrado[sustitucion] = letra;
-}
-
-let cifrado = '';
-let descifrado = '';
+const clave = CryptoJS.enc.Hex.parse("0123456789abcdef0123456789abcdef"); // clave de 256 bits
+const iv = CryptoJS.lib.WordArray.random(16); // IV de 16 bytes
 
 function cryptdecrypt(modo, mensaje) {
+  const textoWordArray = CryptoJS.enc.Utf8.parse(mensaje);
     if (modo === "cifrar") {
-      cifrado = mensaje.replace(/[eiaou]/g, letra => valoresDeReemplazo[letra]);
-      console.log(cifrado);
-      return '<p class = "no-message">Texto cifrado: ' + cifrado + '</p>';
+      const textoCifrado = CryptoJS.AES.encrypt(textoWordArray, clave, {
+        iv: iv,
+        mode: CryptoJS.mode.CBC,
+      });
+      const textoCifradoBase64 = textoCifrado.toString();
+      console.log(textoCifradoBase64);
+      return '<p class = "no-message">Texto cifrado: ' + textoCifradoBase64 + '</p>';
+
   
     } else if (modo === "descifrar") {
-      descifrado = mensaje.replace(/enter|imes|ai|ober|ufat/g, cadena => valoresDeDescifrado[cadena]);
-      return '<p class = "no-message">Texto descifrado: ' + descifrado + '</p>';
+      const textoDescifradoWordArray = CryptoJS.AES.decrypt(mensaje, clave, {
+        iv: iv,
+        mode: CryptoJS.mode.CBC,
+      });
+      const textoDescifrado = CryptoJS.enc.Utf8.stringify(textoDescifradoWordArray);
+      console.log( textoDescifrado);
+      return '<p class = "no-message">Texto descifrado: ' + textoDescifrado + '</p>';;
     }
   }
+  
